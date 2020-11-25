@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .chatutama{
+                border: 1px solid black; 
+                width: 512px;
+                height: 512px;
+            }
+            input{
+                width: 416px;
+            }
+            button{
+                width: 84px;
+            }
+        </style>
+        <script type="text/javascript">
+            function isiChat()
+            {
+                let chatbaru = document.getElementById("chat").value 
+                document.getElementById("tampilchat").innerHTML += chatbaru + "<br>"
+                document.getElementById("chat").value = ""
+            }
+        </script>
+    </head>
+    <body> 
+       <div class ="chatutama">
+           <span id="tampilchat"></span>
+       </div> 
+       <input id="chat">
+       <button onclick="isiChat()">kirim</button>
+    </body>
+</html>
